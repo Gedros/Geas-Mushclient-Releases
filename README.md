@@ -1,6 +1,6 @@
 # Geas MUSHclient package
 
-A complete MUSHclient set-up for [Geas](https://www.geas.de/): a map that
+A complete MUSHclient set-up for Geas (geas.de, port 3334): a map that
 learns as you walk, vitals, chat, inventory, weapons, combat, character
 and specials windows, themes and colour schemes, icon bars and docked,
 tabbed layouts.
@@ -16,8 +16,11 @@ You need [MUSHclient](https://www.gammon.com.au/downloads/dlmushclient.htm)
 
 ## Install
 
-The quick start guide comes with the first release (it is in the zip
-too).
+Follow the **[quick start guide](QUICKSTART.md)** (about 10 minutes; it
+is in the zip too, as QUICKSTART.txt). In short: install MUSHclient 5.06,
+drag the zip's **worlds** and **lua** folders into your MUSHclient
+folder, make a world for geas.de port 3334, and add the one plugin
+**Geas_Package.xml**. It adds the rest.
 
 ## Something wrong?
 
