@@ -1,6 +1,6 @@
 # Geas MUSHclient package
 
-A complete MUSHclient set-up for [Geas](http://play.geas.com): a map that
+A complete MUSHclient set-up for [Geas](https://www.geas.de/): a map that
 learns as you walk, vitals, chat, inventory, weapons, combat, character
 and specials windows, themes and colour schemes, icon bars and docked,
 tabbed layouts.
