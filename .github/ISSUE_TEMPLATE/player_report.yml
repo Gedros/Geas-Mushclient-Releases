@@ -1,0 +1,42 @@
+name: Player problem report
+description: Something in the Geas MUSHclient package went wrong. Type "geas report" in MUSHclient first; it fills most of this in.
+title: "Player report: "
+labels: ["player report", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! If you came here from the **[Report it on GitHub]** link in MUSHclient, your words are already filled in.
+        The report file never holds your login, your password or the words of your conversations.
+  - type: textarea
+    id: doing
+    attributes:
+      label: What were you doing?
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+    validations:
+      required: false
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: report
+    attributes:
+      label: The report file
+      description: Drag the Geas_report_....txt file here (or click here and paste its path; MUSHclient copied it for you). If you have no file, type "geas report" in MUSHclient to make one.
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Versions
+      description: Filled in by MUSHclient.
+    validations:
+      required: false
