@@ -17,10 +17,15 @@ You need [MUSHclient](https://www.gammon.com.au/downloads/dlmushclient.htm)
 ## Install
 
 Follow the **[quick start guide](QUICKSTART.md)** (about 10 minutes; it
-is in the zip too, as QUICKSTART.txt). In short: install MUSHclient 5.06,
-drag the zip's **worlds** and **lua** folders into your MUSHclient
-folder, make a world for geas.de port 3334, and add the one plugin
-**Geas_Package.xml**. It adds the rest.
+is in the zip too, as QUICKSTART.txt). In short:
+
+1. Install MUSHclient 5.06.
+2. Drag the zip's four folders (**worlds**, **lua**, **logs**, **reports**)
+   into your MUSHclient folder.
+3. Open the ready-made world **worlds\Geas (new world).mcl**, or add the
+   one plugin **Geas_Package.xml** to your own world. It adds the rest.
+4. Log in and type **`geas setup`**: a guide sets up the basics in 16
+   short steps.
 
 ## Something wrong?
 
