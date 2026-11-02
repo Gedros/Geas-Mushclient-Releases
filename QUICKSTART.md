@@ -4,14 +4,28 @@ About 10 minutes. You need Windows and an internet connection.
 
 ## 1. Install MUSHclient 5.06
 
-1. Download MUSHclient 5.06 from
-   https://www.gammon.com.au/downloads/dlmushclient.htm and run the
-   installer.
+1. Go to https://www.gammon.com.au/downloads/dlmushclient.htm.
+   **Right-click** the MUSHclient 5.06 download link and choose **Save
+   link as...** (a normal click may not download it). Then run the
+   installer you saved.
 2. When it asks where to install, choose **C:\MUSHclient** rather than
    Program Files. (Windows stops programs saving files inside Program
    Files, and MUSHclient needs to save your maps and settings.)
 
 Already have MUSHclient 5.06? Skip this step.
+
+**Installed MUSHclient before?** A new copy keeps the old copy's
+settings, and its plugins folder may still point at the old copy
+(usually `C:\Program Files (x86)\MUSHclient`). Check it before going on:
+
+1. Open the new MUSHclient: **File > Global Preferences** > **Plugins**.
+2. The plugins folder must be in the MUSHclient you just installed, for
+   example `C:\MUSHclient\worlds\plugins\`.
+3. If it shows `Program Files (x86)` (or any other old folder), change
+   it to your new folder's `worlds\plugins\` and press **OK**.
+
+The package needs this to be right before you add it. If it finds its
+plugins in the wrong folder it says so in orange, with the same fix.
 
 ## 2. Add the package files
 
@@ -59,30 +73,43 @@ Choose **A** (quickest) or **B** (your own MUSHclient settings).
 ## 4. Add the package (one plugin; not needed with world A)
 
 1. **File > Plugins...** > **Add...**
-2. Open the **worlds\plugins** folder inside your MUSHclient folder and
-   choose **Geas_Package.xml** > **Open**. Then **Close**.
-3. In the game window you should see
-   `[Geas] added 17 plugins: GMCP handler, window manager, ...`
+2. Check the box is showing **your** MUSHclient folder (for example
+   `C:\MUSHclient\worlds\plugins`), not an older one in Program Files.
+   Choose **Geas_Package.xml** > **Open**. Then **Close**.
+3. In the game window you should see one line,
+   `[Geas] added 17 plugins: GMCP handler, window manager, ...`, and a
+   reminder to save your world.
 4. **Save your world: File > Save** (or Ctrl+S). MUSHclient then
    remembers the plugins next time.
+5. **Windows will pile up** on top of each other at first. That is
+   normal: the layout puts them in place once you log in, and you can
+   move them yourself (see section 6).
 
 ## The setup guide
 
-Once you have logged in, a blue banner asks you to type **`geas setup`**.
-That starts the **setup guide**: 16 short steps, about 10 to 15 minutes.
+Once you have logged in, a short welcome message offers four links:
+**Run the setup guide**, **Plugins and help**, **Settings** and **Retry
+GMCP** (only needed if the windows show no data). Click **Run the setup
+guide** (or type **`geas setup`**): 16 short steps, about 10 to 15
+minutes. The message has a **Don't show this at login** link;
+`geas welcome` shows it again any time.
 Each step shows **Step # of 16**:
 
 1. Welcome
 2. Screen reader (yes or no)
-3. Your character's name
+3. Your character's name: type your name, password and **Connect:
+   Diku-style** in the box that opens, press **OK** to close it, then
+   click **Next**
 4. Save your world under your name
 5. Typing and keys (command stacking with `;`, auto-repeat, arrow keys,
    Tab completion, the Geas keypad)
-6. Font
+6. Font (for the game text and the windows; 11 and 12 pt suit laptops)
 7. Layout
 8. Colour scheme
 9. Map style
-10. Your old map
+10. Your old map (the old mapper's file is called something like
+    `Geas.de_3334.db`, in your old MUSHclient folder itself, not a folder
+    inside it)
 11. Your old world (triggers, aliases, timers)
 12. The game's recommended settings
 13. Line colours
@@ -98,9 +125,10 @@ Each step shows **Step # of 16**:
   commands (`geas setup choose <number>`, `next`, `back`, `skip`,
   `stop`). With a screen reader, answer **Yes** in step 2: the guide is
   then text only.
-- The banner shows at each login until you run the guide or click
-  "Don't remind me". `geas setup` runs it any time; `geas setup step 9`
-  goes to one step.
+- `geas setup` runs it any time; `geas setup step 9` goes to one step.
+- After changing the layout (step 7), move and resize windows to fit
+  your screen: click and drag a title bar to move, the bottom-right
+  corner to resize.
 
 ## Settings worth changing
 
@@ -113,7 +141,8 @@ world's settings: **Game > Configure** (or Alt+Enter).
   itself.
 - **Font**: **Output** page > **Font**. Popular with MUD players:
   Courier New 9, Consolas 10, Lucida Console 9, Fixedsys (MUSHclient's
-  own) or Dina (a free download).
+  own) or Dina (a free download). On a laptop, try 11 or 12. The
+  windows' font: Settings > Theme > Fonts.
 - **Number keypad**: **Keypad** page (Num Lock on). For Geas: 8 north,
   2 south, 4 west, 6 east, 7 northwest, 9 northeast, 1 southwest,
   3 southeast, + up, - down, 5 look. With **Ctrl** held: look in that
@@ -129,15 +158,17 @@ world's settings: **Game > Configure** (or Alt+Enter).
    (Connecting again after adding the package lets it hear the game
    from the very start.)
 2. Log in as usual.
-3. Once you are in the game you should see `[Geas] GMCP active.` and,
-   after a few seconds, the windows:
+3. Once you are in the game you should see `[Geas] GMCP active.`, the
+   welcome message and, after a few seconds, the windows:
    - **chat** across the top,
    - the **game text** under it,
-   - a **panel** on the right with tabs: Map, Status, Combat,
-     Character, Gear.
+   - on the right, **Vitals** at the top and the **Map** below it.
 
-If the line says `GMCP waiting` and stays that way once you are in the
-game, click **Click here to start** on that line.
+   Everything else is hidden to start with: Settings > Windows (or
+   right-click any window > Windows...) shows the others.
+
+If the windows stay empty, the welcome message says GMCP has not started:
+click **Retry GMCP** (or type `geas start`).
 
 ## 6. Make it look the way you like (5 minutes)
 
@@ -145,14 +176,20 @@ Many windows at once can be a lot. Start here:
 
 1. **Pick a layout.** Type `geas settings` and open **Layouts**. Press
    **Use** on one:
+   - **Default**: chat on top, game text, Vitals and the Map on the
+     right; nothing else.
    - **Minimalist**: mostly game text; vitals as one line; map and chat
-     in a narrow panel. Good to start with.
-   - **Default**: chat on top, game text, a tabbed panel on the right.
+     in a narrow panel.
    - **Explorer**: a big map. **RPG**: a bar along the bottom.
      **Full HUD**: everything on screen.
-2. **Pick colours.** In Settings, open **Theme** and choose a colour
-   scheme (21 of them, for example Charcoal, Midnight, Parchment or your
-   guild's or faith's). Choose a border style there too.
+
+   After changing layout, **move and resize the windows to fit your
+   screen** (below): a layout is fitted to your screen size, not to your
+   taste.
+2. **Pick colours.** The package starts with **Classic**: black and
+   greys with the classic MUD colours. In Settings, open **Theme** to
+   choose another (22 of them, for example Charcoal, Midnight, Parchment
+   or your guild's or faith's). Choose a border style there too.
 
    **Game text hard to read?** (Common if you used old colour scripts.)
    After your first login the package asks once: click **[Set up colours
@@ -161,11 +198,20 @@ Many windows at once can be a lot. Start here:
    MUSHclient's colours and command line to your scheme, and from then on
    changing your scheme in Theme recolours everything. **Restore my
    game-side colour settings** in the same window undoes it.
-3. **Move and size windows.** Drag a window by its title bar; drag its
-   bottom-right corner to resize it. Windows snap to each other's edges.
+3. **Move and size windows.** Click and drag a window by its title bar;
+   drag its bottom-right corner to resize it. Windows snap to each
+   other's edges.
 4. **Tidy up.** Drag a window's title onto another window's title to put
-   them together as tabs. Right-click a window > **Hide this window** to put it away;
-   Settings > **Windows** brings any window back.
+   them together as tabs. The **x** at the right of a title bar hides a
+   window, or **right-click a window's title bar** for all its options,
+   including **Hide this window**. Settings > **Windows** brings any
+   window back.
+   - **Hide the title bar** (right-click the window): a cleaner look,
+     for example on a one-line Vitals. The title bar is cropped off, so
+     windows can sit and snap right next to each other. Move a window
+     without a title bar by dragging it from anywhere inside it;
+     right-click it for its menu. `geas win titles hide` / `show` does
+     every window.
 5. **Lock it.** When you are happy: right-click any window > **Lock all
    windows**, so nothing moves by accident.
 
@@ -179,9 +225,10 @@ Changed your mind? Settings > Layouts > **Use** puts a layout back.
    move it, or onto another window to make tabs.
 3. **`geas settings`** opens the Settings window: every window and
    option, colour schemes (Theme), layouts and the help.
-4. **`geas package`** lists the package's plugins and their versions.
-5. **Every command** is in Settings > Help: click one to put it in the
-   command box.
+4. **`geas package`** lists the package's plugins, their versions and
+   each one's help command (click it).
+5. **`geas`** lists the main commands. **Every command** is in Settings
+   > Help: click one to put it in the command box.
 
 ## Something wrong?
 
@@ -191,7 +238,11 @@ Type **`geas report`**, say what happened, press OK, then click
 your login, your password or the words of your conversations.
 
 Quick fixes:
-- A window is lost off the screen: `geas win reset all`.
+- **Windows acting oddly** (cut off, overlapping, in odd places):
+  - `geas win layout fit`: fit your layout to the screen again.
+  - `geas win reset all`: every window back to its default place and
+    size (also when a window is lost off the screen).
+  - `geas win output reset`: the game text fills its area again.
 - `geas package` lists the package's plugins and their versions;
   `geas package add` adds any that are missing.
 
@@ -210,3 +261,10 @@ The package turns off old plugins that would clash with it
 Geas_Kill_Counter) and says so. Your old maps, weapons and kills can be
 brought in: type `geas map`, `geas weapons` or `geas combat` for the
 import commands.
+
+**Your xmarks and xnotes** (Map_Marker), even from an old MUSHclient such
+as 4.94: first import your old map (setup step 10, or right-click the map
+> Import > A map file), then right-click the map > Import > **Marks and
+notes from an old MUSHclient** (or `geas map import marker file`) and
+choose your **old world file** (.mcl) in the old MUSHclient's worlds
+folder. The old Map_Marker plugin is not needed.
