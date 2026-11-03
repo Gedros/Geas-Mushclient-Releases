@@ -103,7 +103,8 @@ Each step shows **Step # of 16**:
 4. Save your world under your name
 5. Typing and keys (command stacking with `;`, auto-repeat, arrow keys,
    Tab completion, the Geas keypad)
-6. Font (for the game text and the windows; 11 and 12 pt suit laptops)
+6. Font (for the game text and the windows): Courier New, Consolas,
+   Lucida Console or Verdana, 9 to 12 pt (11 and 12 suit laptops)
 7. Layout
 8. Colour scheme
 9. Map style
@@ -141,7 +142,10 @@ world's settings: **Game > Configure** (or Alt+Enter).
   itself.
 - **Font**: **Output** page > **Font**. Popular with MUD players:
   Courier New 9, Consolas 10, Lucida Console 9, Fixedsys (MUSHclient's
-  own) or Dina (a free download). On a laptop, try 11 or 12. The
+  default) or Dina (MUSHclient puts `Dina.fon` in its own folder:
+  double-click it and choose Install, then pick it here). On a laptop,
+  try 11 or 12. Verdana reads well but is not monospaced: the game's
+  tables (armours, weaponstats, combat) do not line up in it. The
   windows' font: Settings > Theme > Fonts.
 - **Number keypad**: **Keypad** page (Num Lock on). For Geas: 8 north,
   2 south, 4 west, 6 east, 7 northwest, 9 northeast, 1 southwest,
@@ -181,6 +185,8 @@ Many windows at once can be a lot. Start here:
    - **Minimalist**: mostly game text; vitals as one line; map and chat
      in a narrow panel.
    - **Explorer**: a big map. **RPG**: a bar along the bottom.
+     **Adventurer**: game text in the centre, the map and combat on the
+     left, character and gear on the right.
      **Full HUD**: everything on screen.
 
    After changing layout, **move and resize the windows to fit your
