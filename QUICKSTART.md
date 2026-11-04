@@ -8,20 +8,24 @@ About 10 minutes. You need Windows and an internet connection.
    **Right-click** the MUSHclient 5.06 download link and choose **Save
    link as...** (a normal click may not download it). Then run the
    installer you saved.
-2. When it asks where to install, choose **C:\MUSHclient** rather than
-   Program Files. (Windows stops programs saving files inside Program
+2. When it asks where to install, it is recommended you choose **C:\MUSHclient** rather than
+   Program Files. (For some users, Windows stops programs saving files inside Program
    Files, and MUSHclient needs to save your maps and settings.)
 
 Already have MUSHclient 5.06? Skip this step.
 
-**Installed MUSHclient before?** A new copy keeps the old copy's
-settings, and its plugins folder may still point at the old copy
-(usually `C:\Program Files (x86)\MUSHclient`). Check it before going on:
+**Installed MUSHclient before?** 
+If you currently use an older version of MUSHclient (eg 4.94) you'll need to download 5.06 and run a fresh install. Don't worry, your world files and settings can all be imported to the new version.
 
-1. Open the new MUSHclient: **File > Global Preferences** > **Plugins**.
-2. The plugins folder must be in the MUSHclient you just installed, for
+IMPORTANT: Before you load any plugins in your new 5.06 installation, you MUST confirm the settings below. Check it before going on:
+
+1. Launch the new MUSHclient:
+2. Go to **File > Global Preferences** > **Plugins**.
+3. Check that the **Default Directory** in your global preferences points to the MUSHclient directory you just installed, for
    example `C:\MUSHclient\worlds\plugins\`.
-3. If it shows `Program Files (x86)` (or any other old folder), change
+4. Now go to **File > Global Preferences** > **Worlds**.
+5. As above, confirm this is pointing to the correct directory. For example `C:\MUSHclient\worlds\`.
+6. If it shows `Program Files (x86)` (or any other old folder), change
    it to your new folder's `worlds\plugins\` and press **OK**.
 
 The package needs this to be right before you add it. If it finds its
@@ -52,10 +56,9 @@ Choose **A** (quickest) or **B** (your own MUSHclient settings).
    and choose **Geas (new world).mcl**.
 2. **Save it under your own name straight away.** The setup guide (below)
    does it for you in step 4, or use **File > Save World Details As...**,
-   for example `Gedros.mcl`. From then on open that one.
-   (A new version of the package replaces "Geas (new world)", never
-   your own world.)
-3. It is set for geas.de port 3334, Courier New 9, the number keypad for
+   for example `Gedros.mcl`. From then on open that world whenver you play.
+   (WARNING: If you do not follow this step, you risk losing all your settings. When updating to a new version of the Geas MUSHclient package in the future, the "Geas (new world)" will be replaced by default.)
+3. The Geas (new world) is set for geas.de port 3334, Courier New 9, the number keypad for
    Geas (below) and every plugin of the package. Skip step 4.
 
 ### B. Make your own world
