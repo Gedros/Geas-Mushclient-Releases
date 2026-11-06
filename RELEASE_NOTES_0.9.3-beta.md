@@ -11,7 +11,8 @@ What changed:
 - **Vitals:** weight before bulk, as the game shows them.
 - **Moving:** `nwu` and similar are left to your own aliases.
 - **Setup guide:** importing an old world is one step (MUSHclient's Import box); a new option recalls whole commands with Alt + arrow keys.
+- **Docks:** a tab clicked after switching programs no longer appears outside its dock.
 - **Inventory:** right-click Carried or Worn to open or close every container there.
 - **Your stats, skills and kill files** now live in your log folder, under `geas` (`geas set folder` to choose another). Existing files are moved there.
 
-Something odd? Type `geas report` and paste the report's text into the issue.
+Something odd? Type `geas report` in MUSHclient and attach the file to a new issue.
