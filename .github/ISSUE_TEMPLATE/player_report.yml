@@ -33,6 +33,14 @@ body:
       description: Drag the Geas_report_....txt file here (or click here and paste its path; MUSHclient copied it for you). If you have no file, type "geas report" in MUSHclient to make one.
     validations:
       required: true
+  - type: textarea
+    id: report_text
+    attributes:
+      label: The report's text
+      description: Open the report file, select all (Ctrl+A), copy and paste it here as well. This lets the report be read straight from the issue.
+      render: text
+    validations:
+      required: false
   - type: input
     id: setup
     attributes:
