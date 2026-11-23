@@ -15,26 +15,33 @@ About 10 minutes. You need Windows and an internet connection.
 Already have MUSHclient 5.06? Skip this step.
 
 **Installed MUSHclient before?** A new copy keeps the old copy's
-settings, and its plugins folder may still point at the old copy
-(usually `C:\Program Files (x86)\MUSHclient`). Check it before going on:
+settings, and its plugins and log folders may still point at the old copy
+(usually `C:\Program Files (x86)\MUSHclient`). Check both before going on:
 
 1. Open the new MUSHclient: **File > Global Preferences** > **Plugins**.
 2. The plugins folder must be in the MUSHclient you just installed, for
    example `C:\MUSHclient\worlds\plugins\`.
 3. If it shows `Program Files (x86)` (or any other old folder), change
    it to your new folder's `worlds\plugins\` and press **OK**.
+4. **File > Global Preferences** > **Logging**: the default log file
+   directory must also be in the new MUSHclient, for example
+   `C:\MUSHclient\logs\` (or `.\logs\`). The package keeps your maps,
+   notes and texts in a `geas` folder inside it. If it shows
+   `Program Files (x86)`, change it and press **OK**.
 
-The package needs this to be right before you add it. If it finds its
-plugins in the wrong folder it says so in orange, with the same fix.
+The package needs these to be right before you add it. If it finds its
+plugins or the log folder in the wrong place it says so in orange, with
+the same fix.
 
 ## 2. Add the package files
 
 1. Download the package:
    https://github.com/Gedros/Geas-Mushclient-Releases/releases/latest/download/Geas-Mushclient.zip
 2. Right-click **Geas-Mushclient.zip** > **Extract All...** > **Extract**.
-3. In the extracted folder you will see four folders, **worlds**,
-   **lua**, **logs** and **reports**, and this guide.
-4. Select the four folders and drag them into your MUSHclient folder
+3. In the extracted folder you will see six folders, **worlds**,
+   **lua**, **logs**, **reports**, **sounds** and **geas_settings**, and
+   this guide.
+4. Select the six folders and drag them into your MUSHclient folder
    (for example C:\MUSHclient). If Windows asks, choose **Replace the
    files in the destination**.
 
@@ -125,7 +132,10 @@ Each step shows **Step # of 16**:
 - Every step is also printed in the game window with numbered links and
   commands (`geas setup choose <number>`, `next`, `back`, `skip`,
   `stop`). With a screen reader, answer **Yes** in step 2: the guide is
-  then text only.
+  then text only, and right-click menus are printed as text too.
+- **The typed menu, `gm`:** every setting and every window's menu, a short
+  numbered list at a time. Type gm for the menu. gm and a number chooses.
+  gm back goes up. `gm help` has the rest.
 - `geas setup` runs it any time; `geas setup step 9` goes to one step.
 - After changing the layout (step 7), move and resize windows to fit
   your screen: click and drag a title bar to move, the bottom-right
@@ -188,6 +198,8 @@ Many windows at once can be a lot. Start here:
      **Adventurer**: game text in the centre, the map and combat on the
      left, character and gear on the right.
      **Full HUD**: everything on screen.
+     **Stay Awhile**: two tall tabbed panels either side of the game
+     text, Physical and Mental as upright bars beside it.
 
    After changing layout, **move and resize the windows to fit your
    screen** (below): a layout is fitted to your screen size, not to your
@@ -255,7 +267,7 @@ Quick fixes:
 ## Updating to a new version
 
 1. Close MUSHclient.
-2. Download the zip again (same link), extract it, and drag its four
+2. Download the zip again (same link), extract it, and drag its six
    folders into your MUSHclient folder again (Replace).
 3. Open MUSHclient and your world. Any new plugins are added by
    themselves. Your settings, maps and layouts are kept.
