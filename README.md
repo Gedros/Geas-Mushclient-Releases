@@ -2,8 +2,9 @@
 
 A complete MUSHclient set-up for Geas (geas.de, port 3334): a map that
 learns as you walk, vitals, chat, inventory, weapons, combat, character
-and specials windows, themes and colour schemes, icon bars and docked,
-tabbed layouts.
+and specials windows, mail, a compendium of your texts and notes, a
+tracker of your playtime and progress, sounds, themes and colour schemes,
+icon bars and docked, tabbed layouts.
 
 ## Download
 
@@ -22,8 +23,8 @@ is in the zip too, as QUICKSTART.txt). In short:
 1. Install MUSHclient 5.06 (on its download page, right-click the link
    and choose **Save link as...**). Installed it before? Check **File >
    Global Preferences > Plugins** points at your new MUSHclient folder.
-2. Drag the zip's four folders (**worlds**, **lua**, **logs**, **reports**)
-   into your MUSHclient folder.
+2. Drag the zip's six folders (**worlds**, **lua**, **logs**, **reports**,
+   **sounds**, **geas_settings**) into your MUSHclient folder.
 3. Open the ready-made world **worlds\Geas (new world).mcl**, or add the
    one plugin **Geas_Package.xml** to your own world. It adds the rest.
 4. Log in and click **Run the setup guide** in the welcome message (or
